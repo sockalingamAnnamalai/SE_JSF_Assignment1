@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en"
+	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:a="http://xmlns.jcp.org/jsf/passthrough">
+	<head>
+	<meta charset="utf-8"></meta>
+	<meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no">
+	</meta>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	</link>
+  <title>Register</title>
+</head>
+<div align="center">
+<h:body>
+<h1>Register!</h1>
+<h2>All fields are required</h2>
+<h:form>
+<h:panelGrid columns="1" styleclass="formTable">
+First Name:
+<h:inputText id="Firstname"
+	required="true"
+	requiredMessage="Must enter Firstname"></h:inputText>
+	<h:message style= "color:red" for="Firstname" styleclass="error"/><br/>
+Last Name:
+<h:inputText id="Lastname"
+	required="true"
+	requiredMessage="Must enter Lastname"></h:inputText>
+	<h:message style= "color:red" for="Lastname" styleclass="error"/><br/>
+Address:
+<h:inputText id="Address"
+	required="true"
+	requiredMessage="Must enter Address"></h:inputText>
+	<h:message style= "color:red" for="Address" styleclass="error"/><br/>
+Email:
+<h:inputText id="Email"
+	required="true"
+	requiredMessage="Must enter Email"></h:inputText>
+	<h:message style= "color:red" for="Email" styleclass="error"/><br/>
+Username:
+<h:inputText  id="Username"
+	required="true"
+	requiredMessage="Must enter username"></h:inputText>"Must be Admin"
+	<h:message style= "color:red" for="Username" styleclass="error"/><br/>
+Password:
+<h:inputText id="Password"
+	required="true"
+	requiredMessage="Must enter Password"></h:inputText>"Must be Admin"
+	<h:message style= "color:red" for="Password" styleclass="error"/><br/>
+</h:panelGrid>
+<h:commandButton value="Register" action="successfully_registered.xhtml"/>
+</h:form>
+</h:body>
+</div>
+</html>
